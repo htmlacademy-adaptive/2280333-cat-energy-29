@@ -1,0 +1,42 @@
+.explanation {
+  padding: 20px 20px 49px 20px;
+}
+
+.explanation__header {
+  color: $black;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.explanation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.explanation__item {
+  margin-bottom: 26px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 80px;
+
+  &--leaf {
+    background-image: url("../../img/explanation-leaf.svg");
+  }
+
+  &--water {
+    background-image: url("../../img/explanation-water.svg");
+  }
+
+  &--eat {
+    background-image: url("../../img/explanation-eat.svg");
+  }
+
+  &--time {
+    background-image: url("../../img/explanation-time.svg");
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

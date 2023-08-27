@@ -1,0 +1,50 @@
+.products {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.products__more {
+  padding: 55px 20px 25px 20px;
+  text-align: center;
+  background-image: url("../../img/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center 25px ;
+  border-bottom: 1px solid $border-grey;
+}
+
+.products__item {
+  padding: 20px 20px 25px 20px;
+  border-bottom: 1px solid $border-grey;
+
+  &:first-child {
+    border-top: 1px solid $border-grey;
+  }
+
+}
+
+.products__more-title {
+  color: $special-black;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-top: 23px;
+  margin-bottom: 8px;
+}
+
+.products__more-text {
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 21px;
+}
+
+.products__more-button {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+

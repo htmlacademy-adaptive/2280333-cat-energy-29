@@ -1,0 +1,39 @@
+.control {
+  display: flex;
+  gap: 15px;
+}
+
+.control__radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid $special-grey;
+}
+
+.control__input:checked ~ .control__radio::after {
+  display: block;
+  content: "";
+  border-radius: 50%;
+  background: $green;
+  width: 14px;
+  height: 14px;
+}
+
+.control__checkbox {
+  width: 26px;
+  height: 26px;
+  border: 1px solid $special-grey;
+}
+
+.control__input:checked ~ .control__checkbox::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url("../../img/checkbox-tick.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}

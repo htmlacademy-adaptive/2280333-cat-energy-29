@@ -1,0 +1,34 @@
+.main-footer {
+background-color: $basic-grey;
+}
+
+.main-footer__wrapper {
+  padding: 40px 20px;
+}
+
+.main-footer__social {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  list-style: none;
+  margin: 20px 0;
+  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid $border-grey;
+  border-bottom: 1px solid $border-grey;
+
+}
+
+.main-footer__logo {
+  display: block;
+  width: 101px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-footer__logo-academy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

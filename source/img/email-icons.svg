@@ -1,0 +1,21 @@
+<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="21" height="20" fill="#E5E5E5"/>
+<g id="Mobile" clip-path="url(#clip0_1_4)">
+<rect id="Rectangle 14" x="-268" y="-711" width="320" height="2137" fill="white"/>
+<g id="input_name">
+<g id="email">
+<g id="input">
+<rect id="Rectangle 2" x="-184.5" y="-12.5" width="216" height="44" stroke="#CDCDCD"/>
+</g>
+<g id="email-stroke 1">
+<path id="Vector" d="M1.50034 8.5V16.5H18.5041V8.5M1.50034 3.5H18.5041V5.5L10.0022 11.5L1.50034 5.5V3.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_1_4">
+<rect width="320" height="2137" fill="white" transform="translate(-268 -711)"/>
+</clipPath>
+</defs>
+</svg>
