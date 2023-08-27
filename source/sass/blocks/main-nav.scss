@@ -1,0 +1,35 @@
+.main-nav{
+  color: $black;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.main-nav__list {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &--opened {
+    display: block;
+  }
+}
+
+.main-nav__link {
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 24px;
+  text-decoration: none;
+  color: $black;
+}
+
+.main-nav__item {
+  text-align: center;
+  border-top: 1px solid #E6E6E6;
+
+  &:last-child {
+    border-bottom: 1px solid #E6E6E6;
+  }
+}

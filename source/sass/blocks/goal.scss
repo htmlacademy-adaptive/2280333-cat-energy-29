@@ -1,0 +1,70 @@
+.goal {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.goal__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.goal__header {
+  color: $black;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-left: 70px;
+  margin-bottom: 29px;
+}
+
+.goal__text {
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+.goal__link {
+  display: block;
+  text-decoration: none;
+  color: $black;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  border-top: 1px solid $border-grey;
+  padding-top: 15px;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 12px;
+    background-image: url("../../img/goal-arrow.svg");
+    background-repeat: no-repeat;
+    margin-left: 15px;
+  }
+}
+
+.goal__item {
+  background-color: $basic-grey;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  padding: 30px 20px 18px 20px;
+
+  &--slim {
+    background-image: url("../../img/cat-slim.svg");
+    background-position: 20px 21px;
+  }
+
+  &--pro {
+    background-image: url("../../img/cat-pro.svg");
+    background-position: 13px 24px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
