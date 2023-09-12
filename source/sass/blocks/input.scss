@@ -5,7 +5,7 @@
   line-height: 18px;
   text-transform: uppercase;
   padding: 14px 15px 13px 15px;
-  border: 1px solid $special-grey;
+  border: 1px solid $special-border-grey;
 
   &--email {
     background-image: url("../../img/email-icons.svg");
@@ -24,5 +24,28 @@
     height: 150px;
     border: 1px solid $special-border-grey;
     padding: 14px 14px 14px 15px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .input {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 11px 20px;
+
+    &--textarea {
+      line-height: 30px;
+      margin-top: 15px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .input {
+    padding: 10px 20px;
+
+    &.input--textarea {
+      margin-top: 2px;
+    }
   }
 }

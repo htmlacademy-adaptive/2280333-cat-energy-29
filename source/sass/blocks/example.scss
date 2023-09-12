@@ -41,7 +41,7 @@
   width: 85px;
   padding: 0 10px;
   margin-left: auto;
-  margin-right: auto
+  margin-right: auto;
 }
 
 .example__item-value {
@@ -57,7 +57,6 @@
   white-space: nowrap;
   border-radius: 3px;
   border: 1px solid $special-grey;
-
 }
 
 .example__expenses {
@@ -77,7 +76,7 @@
 }
 
 .example__photo-before {
-  position:absolute ;
+  position: absolute;
   height: 100%;
   width: 50%;
   background-image: url("../../img/fat-cat.png");
@@ -98,4 +97,127 @@
   background-repeat: no-repeat;
   background-color: $grey;
   z-index: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    background-color: transparent;
+    background-image: linear-gradient(0deg, $grey 462px, transparent 462px);
+  }
+
+  .example__wrapper {
+    padding: 45px 30px 101px 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .example__expenses {
+    flex-direction: column;
+    gap: 9px;
+    text-align: right;
+    font-size: 20px;
+  }
+
+  .example__header {
+    grid-column: 1 / -1;
+  }
+
+  .example__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 55px;
+    grid-column: 1 / -1;
+  }
+
+  .example__list {
+    grid-auto-columns: 162px;
+    column-gap: 43px;
+    grid-template-rows: 72px min-content;
+    margin-bottom: 0;
+  }
+
+  .example__item-name {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .example__item-value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__item-name-text {
+    display: inline;
+    background-color: $white;
+  }
+
+  .example__photo {
+    grid-column: 1 / -1;
+    margin-top: 99px;
+    width: 560px;
+    height: 512px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .example__photo-before {
+    background-size: 560px 100%;
+    background-color: transparent;
+    background-image: url("../../img/fat-cat.png"), linear-gradient(0deg, $grey 361px, $white 361px);
+  }
+
+  .example__photo-after {
+    background-size: 560px 100%;
+    background-color: transparent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    background-image: linear-gradient(0deg, $basic-grey 462px, transparent 462px);
+  }
+
+  .example__wrapper {
+    padding: 0 110px 75px 110px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 206px min-content 132px max-content;
+    column-gap: 100px;
+  }
+
+  .example__header {
+    margin-bottom: 0;
+    grid-column: 1 / 2;
+  }
+
+  .example__text {
+    grid-column: 1 / 2;
+    margin-bottom: 69px;
+    padding-right: 95px;
+  }
+
+  .example__list {
+    grid-column: 1 / 2;
+  }
+
+  .example__expenses {
+    grid-column: 1 / 2;
+    gap: 63px;
+    flex-direction: row;
+    justify-content: initial;
+  }
+
+  .example__photo {
+    grid-row: 1 / -1;
+    grid-column: 2 / 3;
+    padding-bottom: 10px;
+    margin-top: 0;
+  }
+
+  .example__photo-before {
+    background-image: url("../../img/fat-cat.png"), linear-gradient(0deg, $basic-grey 377px, $white 377px);
+  }
+
+  .example__item-name-text {
+    background-color: $basic-grey;
+  }
 }

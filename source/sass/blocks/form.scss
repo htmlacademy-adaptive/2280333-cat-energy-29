@@ -18,7 +18,7 @@
 .form__label {
   display: flex;
   align-items: center;
-  font-family: "Oswald",sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   margin-bottom: 14px;
@@ -69,4 +69,139 @@
 .form__bottom-footnote {
   display: block;
   text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__fieldset {
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-bottom: 65px;
+
+    &--radio {
+      margin-top: 72px;
+      padding: 23px 27px 27px 27px;
+      margin-left: 70px;
+      margin-right: 70px;
+      border: 1px solid $special-border-grey;
+    }
+
+    &--additionally {
+      margin-bottom: 52px;
+    }
+  }
+
+  .form__label {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .form__fieldset-header {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+
+    &--additionally {
+      margin-bottom: 57px;
+    }
+  }
+
+  .form__control-list {
+    &--checkbox {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 19px;
+      column-gap: 60px;
+    }
+  }
+
+  .form__bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    padding-left: 70px;
+    padding-right: 70px;
+    align-items: center;
+  }
+
+  .form__button {
+    padding: 14px 45px;
+    margin-bottom: 0;
+  }
+
+  .form__bottom-footnote {
+    font-size: 16px;
+    line-height: 16px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+
+    &--text {
+      grid-column: 1 / -1;
+    }
+  }
+
+  .form__fieldset {
+    padding-left: 110px;
+    padding-right: 110px;
+    grid-column: 1 / -1;
+    margin-bottom: 0;
+    margin-top: 70px;
+
+    &--cat {
+      grid-column: 1 / 2;
+      padding-right: 0;
+      margin-top: 0;
+    }
+
+    &--radio {
+      grid-column: 2 / 3;
+      margin: 0;
+      padding: 25px 28px;
+      margin-right: 110px;
+      margin-top: 0;
+    }
+
+    &--contacts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 80px;
+    }
+  }
+
+  .form__fieldset-header {
+    &--contacts {
+      grid-column: 1 / -1;
+    }
+  }
+
+  .form__bottom {
+    grid-column: 1 / -1;
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 60px;
+    column-gap: 80px;
+  }
+
+  .form__label {
+    &--email {
+      margin-bottom: 0;
+    }
+  }
+
+  .form__control-list {
+    &--checkbox {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 104px;
+    }
+  }
 }

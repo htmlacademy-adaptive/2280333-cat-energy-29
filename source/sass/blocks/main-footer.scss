@@ -1,5 +1,5 @@
 .main-footer {
-background-color: $basic-grey;
+  background-color: $basic-grey;
 }
 
 .main-footer__wrapper {
@@ -17,7 +17,6 @@ background-color: $basic-grey;
   padding-bottom: 20px;
   border-top: 1px solid $border-grey;
   border-bottom: 1px solid $border-grey;
-
 }
 
 .main-footer__logo {
@@ -31,4 +30,40 @@ background-color: $basic-grey;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 55px 30px;
+  }
+
+  .main-footer__social {
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .main-footer__logo {
+    width: 168px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .main-footer__logo-academy {
+    width: 168px;
+    gap: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer__wrapper {
+    padding: 66px 110px;
+  }
+
+  .main-footer__social {
+    margin: 0;
+    padding: 0;
+  }
 }
