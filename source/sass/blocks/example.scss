@@ -41,7 +41,7 @@
   width: 85px;
   padding: 0 10px;
   margin-left: auto;
-  margin-right: auto
+  margin-right: auto;
 }
 
 .example__item-value {
@@ -57,7 +57,6 @@
   white-space: nowrap;
   border-radius: 3px;
   border: 1px solid $special-grey;
-
 }
 
 .example__expenses {
@@ -77,7 +76,7 @@
 }
 
 .example__photo-before {
-  position:absolute ;
+  position: absolute;
   height: 100%;
   width: 50%;
   background-image: url("../../img/fat-cat.png");
@@ -116,6 +115,7 @@
     flex-direction: column;
     gap: 9px;
     text-align: right;
+    font-size: 20px;
   }
 
   .example__header {
@@ -143,16 +143,12 @@
 
   .example__item-value {
     font-size: 30px;
-    line-height: 37px
+    line-height: 37px;
   }
 
   .example__item-name-text {
     display: inline;
     background-color: $white;
-  }
-
-  .example__expenses {
-    font-size: 20px;
   }
 
   .example__photo {
@@ -178,7 +174,7 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    background-image: linear-gradient(0deg, $basic-grey 462px, transparent 462px)
+    background-image: linear-gradient(0deg, $basic-grey 462px, transparent 462px);
   }
 
   .example__wrapper {
@@ -218,11 +214,10 @@
   }
 
   .example__photo-before {
-    background-image: url(../../img/fat-cat.png), linear-gradient(0deg, $basic-grey 377px, $white 377px)
+    background-image: url("../../img/fat-cat.png"), linear-gradient(0deg, $basic-grey 377px, $white 377px);
   }
 
   .example__item-name-text {
     background-color: $basic-grey;
   }
 }
-

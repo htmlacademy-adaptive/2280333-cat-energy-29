@@ -18,7 +18,7 @@
 .form__label {
   display: flex;
   align-items: center;
-  font-family: "Oswald",sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   margin-bottom: 14px;
@@ -179,7 +179,7 @@
 
   .form__fieldset-header {
     &--contacts {
-      grid-column: 1 / -1 ;
+      grid-column: 1 / -1;
     }
   }
 
