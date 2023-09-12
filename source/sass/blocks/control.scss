@@ -37,3 +37,20 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+@media (min-width: $tablet-width) {
+  .control {
+    gap: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .control__radio {
+    width: 40px;
+    height: 40px;
+  }
+  .control__input:checked ~ .control__radio::after {
+    width: 18px;
+    height: 18px;
+  }
+}

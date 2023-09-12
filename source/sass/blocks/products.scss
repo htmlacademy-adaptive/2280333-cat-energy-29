@@ -48,3 +48,32 @@
   width: 100%;
 }
 
+@media (min-width: $tablet-width) {
+  .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .products__item {
+    border-bottom: none;
+    padding: 0;
+
+    &:first-child {
+      border-top: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 63px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+

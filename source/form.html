@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -21,17 +22,17 @@
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link">Подбор программы</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active">Подбор программы</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-container">
-      <h1 class="main-container__header container">Подбор программы</h1>
+      <h1 class="main-container__header main-container__header--form  container">Подбор программы</h1>
       <form class="program-selection form container" action="https://echo.htmlacademy.ru" method="post">
-        <div class="program-selection__text">Заполните анкету, и мы подберем программу питания для вашего кота</div>
-        <fieldset class="form__fieldset">
+        <div class="program-selection__text form__text">Заполните анкету, и мы подберем программу питания для вашего кота</div>
+        <fieldset class="form__fieldset form__fieldset--cat">
           <label class="form__label">
             <span class="form__label-text">Имя:*</span>
             <input class="form__input input" type="text" value="барсик" name="name">
@@ -70,9 +71,9 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__fieldset">
-          <legend class="form__fieldset-header">Контактные данные (владельца кота)</legend>
-          <label class="form__label">
+        <fieldset class="form__fieldset form__fieldset--contacts">
+          <legend class="form__fieldset-header form__fieldset-header--contacts">Контактные данные (владельца кота)</legend>
+          <label class="form__label form__label--email">
             <span class="form__label-text">E-mail:*</span>
             <input class="form__input input input--email" type="email" name="email" value="кuklachev@gmail.com">
           </label>
@@ -86,9 +87,9 @@
           <label class="visually-hidden" for="comment">Расскажите о коте</label>
           <textarea class="input input--textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
-        <fieldset class="form__fieldset">
-          <legend class="form__fieldset-header">Дополнительно</legend>
-          <ul class="form__control-list">
+        <fieldset class="form__fieldset form__fieldset--additionally">
+          <legend class="form__fieldset-header form__fieldset-header--additionally">Дополнительно</legend>
+          <ul class="form__control-list form__control-list--checkbox">
             <li class="form__control-item">
               <label class="form__label control">
                 <input class="control__input visually-hidden" name="additionally[]" value="sweetener" type="checkbox" checked>
@@ -101,13 +102,6 @@
                 <input class="control__input visually-hidden" name="additionally[]" value="milk" type="checkbox">
                 <span class="control__checkbox"></span>
                 <span class="control__label">молоко</span>
-              </label>
-            </li>
-            <li class="form__control-item">
-              <label class="form__label control">
-                <input class="control__input visually-hidden" name="additionally[]" value="drinking-water" type="checkbox">
-                <span class="control__checkbox"></span>
-                <span class="control__label">питьевая вода</span>
               </label>
             </li>
             <li class="form__control-item">

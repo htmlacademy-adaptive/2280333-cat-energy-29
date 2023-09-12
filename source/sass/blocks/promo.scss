@@ -27,3 +27,89 @@
 .promo__link {
   width: 100%;
 }
+
+@media (min-width: $tablet-width) {
+  .promo {
+    text-align: left;
+  }
+
+  .promo__wrapper {
+    position: relative;
+    background-image: none;
+    padding: 65px 30px 0 30px;
+  }
+
+  .promo__header {
+    color: $black;
+    text-align: left;
+    margin-left: 90px;
+    margin-right: 180px;
+    margin-bottom: 40px;
+  }
+
+  .promo__text {
+    color: $black;
+    line-height: 20px;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 90px;
+    margin-bottom: 21px;
+  }
+
+  .promo__image {
+    width: 709px;
+    height: 609px;
+  }
+
+  .promo__link {
+    position: absolute;
+    width: auto;
+    left: 120px;
+    bottom: 526px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__background {
+    height: 695px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background-image: linear-gradient(90deg, transparent 50%, rgba(104, 183, 56, 0.85) 50%), url("../../img/promo-cat-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
+  .promo__wrapper {
+    min-height: 590px;
+    padding-top: 110px;
+    padding-left: 0px;
+  }
+
+  .promo__image {
+    position: absolute;
+    width: 552px;
+    height: 499px;
+    bottom: 52px;
+    right: 331px;
+  }
+
+  .promo__link {
+    position: initial;
+    margin-left: 190px;
+  }
+
+  .promo__header {
+    width: 420px;
+    margin-left: 190px;
+    margin-bottom: 40px;
+  }
+
+  .promo__text {
+    margin-left: 190px;
+    margin-bottom: 52px;
+  }
+}
+
+
+

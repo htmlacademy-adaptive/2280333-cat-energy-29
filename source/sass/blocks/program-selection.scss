@@ -11,3 +11,29 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .program-selection {
+    padding-bottom: 60px;
+  }
+
+  .program-selection__text {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+    padding-left: 70px;
+    padding-right: 0;
+    width: 400px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-selection {
+    padding-bottom: 79px;
+  }
+
+  .program-selection__text {
+    padding-left: 110px;
+    width: 450px;
+  }
+}

@@ -33,3 +33,44 @@
   height: 362px;
   background-size: cover;
 }
+
+@media (min-width: $tablet-width) {
+  .address__content {
+    padding: 60px 70px;
+  }
+
+  .address__text {
+    font-size: 20px;
+    line-height: 26px;
+    width: 163px;
+  }
+
+  .address__wrapper {
+    font-size: 16px;
+    width: 157px;
+  }
+
+  .address__street {
+    margin-bottom: 28px;
+  }
+
+  .address__map {
+    background-image: url("../../img/map-tablet.png");
+    height: 400px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .address__content {
+    position: absolute;
+    padding: 60px 80px;
+    background-color: $white;
+    margin-left: 110px;
+    margin-top: 95px;
+    width: 565px;
+  }
+
+  .address__map {
+    background-image: url("../../img/map-desktop.png");
+  }
+}
