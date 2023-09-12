@@ -36,6 +36,9 @@
     &--textarea {
       line-height: 30px;
       margin-top: 15px;
+      margin-left: 70px;
+      margin-right: 70px;
+      width: calc(100% - 140px);
     }
   }
 }
@@ -46,6 +49,9 @@
 
     &.input--textarea {
       margin-top: 2px;
+      margin-left: 110px;
+      margin-right: 110px;
+      width: calc(100% - 220px);
     }
   }
 }
