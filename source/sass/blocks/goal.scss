@@ -40,11 +40,28 @@
   &::after {
     content: "";
     display: inline-block;
-    width: 32px;
+    width: 24px;
     height: 12px;
     background-image: url("../../img/goal-arrow.svg");
     background-repeat: no-repeat;
+    background-position: center right;
     margin-left: 15px;
+  }
+
+  &:hover::after {
+    width: 32px;
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::after {
+      width: 32px;
+    }
+  }
+
+  &:focus {
+    outline: 1px solid $outline-color;
   }
 }
 
@@ -154,5 +171,9 @@
 
   .goal__link {
     padding-top: 0;
+
+    &:active {
+
+    }
   }
 }

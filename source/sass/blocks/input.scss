@@ -25,6 +25,20 @@
     border: 1px solid $special-border-grey;
     padding: 14px 14px 14px 15px;
   }
+
+  &:hover {
+    border-color: $special-grey;
+  }
+
+  &:focus {
+    border-color: $dark-gray;
+    outline: 1px solid $dark-gray;
+  }
+
+  &:invalid {
+    border-color: $error;
+    outline: 1px solid $error;
+  }
 }
 
 @media (min-width: $tablet-width) {

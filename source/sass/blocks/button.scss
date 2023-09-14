@@ -11,9 +11,39 @@
   color: $white;
   background-color: $green;
 
+  &:hover {
+    background-color: $green-hover;
+  }
+
+  &:active {
+    background-color: $green-hover;
+    color: $white-hover;
+  }
+
+  &:focus {
+    background-color: $green-hover;
+    color: $white-hover;
+    outline: 1px solid $outline-color;
+  }
+
   &--grey {
     background-color: $basic-grey;
     color: $dark-gray;
+
+    &:hover {
+      background-color: $special-grey-hover;
+    }
+
+    &:active {
+      background-color: $special-grey-hover;
+      color: $dark-gray;
+    }
+
+    &:focus {
+      outline: 1px solid $outline-color;
+      color: $dark-gray;
+      background-color: $special-grey-hover;
+    }
   }
 }
 

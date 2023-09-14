@@ -34,6 +34,32 @@
   padding-bottom: 24px;
   text-decoration: none;
   color: $black;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: 1px solid $outline-color;
+  }
+
+  &--white {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active{
+      opacity: 0.3;
+    }
+
+    &:focus {
+      outline: 1px solid $white;
+    }
+  }
 }
 
 .main-nav__item {
