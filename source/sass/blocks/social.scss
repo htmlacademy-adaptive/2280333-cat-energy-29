@@ -1,0 +1,15 @@
+.social__link:focus path {
+  fill: $green;
+}
+
+.social__link:hover path {
+  fill: $green;
+}
+
+.social__link:active path {
+  fill: $green;
+  opacity: 0.3;
+}
+
+
+
