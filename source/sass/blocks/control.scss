@@ -55,6 +55,19 @@
   background-repeat: no-repeat;
 }
 
+.control__input:hover ~ .control__checkbox {
+  border-color: $control-hover;
+}
+
+.control__input:focus ~ .control__checkbox {
+  outline: 1px solid $outline-color;
+}
+
+.control__input:disabled ~ .control__checkbox{
+  border-color: $control-hover;
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .control {
     gap: 20px;
