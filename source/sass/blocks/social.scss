@@ -1,12 +1,16 @@
-.social__link:focus path {
-  fill: $green;
+.social__icon {
+  color: $special-grey-button;
 }
 
-.social__link:hover path {
-  fill: $green;
+.social__link:focus .social__icon {
+  color: $green;
 }
 
-.social__link:active path {
-  fill: $green;
+.social__link:hover .social__icon {
+  color: $green;
+}
+
+.social__link:active .social__icon {
+  color: $green;
   opacity: 0.3;
 }

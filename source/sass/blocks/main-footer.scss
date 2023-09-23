@@ -38,21 +38,29 @@
   }
 }
 
+.main-footer__logo-academy-text {
+  color: $dark-gray;
+}
+
+.main-footer__logo-academy-icons {
+  color: $special-grey-button;
+}
+
 .main-footer__logo-academy {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  &:hover .main-footer__logo-academy-icons path {
-    fill: $green;
+  &:hover .main-footer__logo-academy-icons {
+    color: $green;
   }
 
   &:active {
     opacity: 0.3;
   }
 
-  &:active .main-footer__logo-academy-icons path {
-    fill: $green;
+  &:active .main-footer__logo-academy-icons {
+    color: $green;
   }
 
   &:focus {
