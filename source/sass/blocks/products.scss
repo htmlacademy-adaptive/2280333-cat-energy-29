@@ -7,7 +7,7 @@
 .products__more {
   padding: 55px 20px 25px 20px;
   text-align: center;
-  background-image: url("../../img/plus.svg");
+  background-image: url("../img/plus.svg");
   background-repeat: no-repeat;
   background-position: center 25px;
   border-bottom: 1px solid $border-grey;
@@ -24,7 +24,7 @@
 
 .products__more-title {
   color: $special-black;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Tahoma", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;

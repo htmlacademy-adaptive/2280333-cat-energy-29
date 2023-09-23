@@ -4,7 +4,7 @@
 
 .program-selection__text {
   color: $black;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Tahoma", sans-serif;
   line-height: 18px;
   text-transform: uppercase;
   margin-bottom: 39px;
@@ -22,8 +22,7 @@
     line-height: 30px;
     margin-bottom: 66px;
     padding-left: 70px;
-    padding-right: 0;
-    width: 400px;
+    padding-right: 370px;
   }
 }
 
@@ -33,7 +32,6 @@
   }
 
   .program-selection__text {
-    padding-left: 110px;
-    width: 450px;
+    padding: 0;
   }
 }

@@ -1,11 +1,14 @@
 .promo {
   text-align: center;
+  background-image:
+    linear-gradient(rgba(104, 183, 56, 0.85) 303px, transparent 303px),
+    url("../img/promo-cat.jpg"),
+    linear-gradient($promo-dark-grey 303px, transparent 303px);
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .promo__wrapper {
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 302px, transparent 302px), url("../../img/promo-cat.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
   padding: 27px 20px 20px 20px;
 }
 
@@ -18,7 +21,7 @@
 .promo__text {
   color: $white;
   margin: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Tahoma", sans-serif;
   line-height: 14px;
   text-transform: uppercase;
   margin-bottom: 29px;
@@ -31,11 +34,11 @@
 @media (min-width: $tablet-width) {
   .promo {
     text-align: left;
+    background-image: none;
   }
 
   .promo__wrapper {
     position: relative;
-    background-image: none;
     padding: 65px 30px 0 30px;
   }
 
@@ -72,10 +75,14 @@
 @media (min-width: $desktop-width) {
   .promo__background {
     height: 695px;
+    width: 100%;
     position: absolute;
     top: 0;
     z-index: -1;
-    background-image: linear-gradient(90deg, transparent 50%, rgba(104, 183, 56, 0.85) 50%), url("../../img/promo-cat-desktop.jpg");
+    background-image:
+      linear-gradient(90deg, transparent 50%, rgba(104, 183, 56, 0.85) 50%),
+      url("../img/promo-cat-desktop.jpg"),
+      linear-gradient(90deg, transparent 50%, $promo-dark-grey 50%);
     background-repeat: no-repeat;
     background-position: right top;
   }
