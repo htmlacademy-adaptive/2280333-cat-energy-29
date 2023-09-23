@@ -21,19 +21,19 @@
   padding-left: 80px;
 
   &--leaf {
-    background-image: url("../../img/explanation-leaf.svg");
+    background-image: url("../img/explanation-leaf.svg");
   }
 
   &--water {
-    background-image: url("../../img/explanation-water.svg");
+    background-image: url("../img/explanation-water.svg");
   }
 
   &--eat {
-    background-image: url("../../img/explanation-eat.svg");
+    background-image: url("../img/explanation-eat.svg");
   }
 
   &--time {
-    background-image: url("../../img/explanation-time.svg");
+    background-image: url("../img/explanation-time.svg");
   }
 
   &:last-child {
@@ -71,7 +71,7 @@
     &::before {
       content: counter(count);
       color: $basic-grey;
-      font-family: "Oswald", sans-serif;
+      font-family: "Oswald", "Tahoma", sans-serif;
       font-size: 280px;
       font-weight: 400;
       line-height: 280px;

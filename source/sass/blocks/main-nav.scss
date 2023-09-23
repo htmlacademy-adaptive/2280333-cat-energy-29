@@ -1,6 +1,6 @@
 .main-nav {
   color: $black;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Tahoma", sans-serif;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
@@ -12,7 +12,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  background-image: url("../../img/button-toggle-burger.svg");
+  background-image: url("../img/button-toggle-burger.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -24,6 +24,11 @@
   padding: 0;
 
   &--opened {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 66px;
+    background-color: $white;
     display: block;
   }
 }
@@ -34,6 +39,32 @@
   padding-bottom: 24px;
   text-decoration: none;
   color: $black;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: 1px solid $outline-color;
+  }
+
+  &--white {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &:focus {
+      outline: 1px solid $white;
+    }
+  }
 }
 
 .main-nav__item {
@@ -58,6 +89,12 @@
   .main-nav__list {
     display: flex;
     gap: 33px;
+
+    &--opened {
+      position: initial;
+      display: flex;
+      background-color: transparent;
+    }
   }
 
   .main-nav__item {

@@ -51,7 +51,7 @@
   grid-row: 1 / 2;
   margin: 0;
   color: $black;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Tahoma", sans-serif;
   font-size: 24px;
   line-height: 24px;
   white-space: nowrap;
@@ -65,7 +65,7 @@
   justify-content: center;
   color: $black;
   text-align: center;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Tahoma", sans-serif;
   line-height: 20px;
   text-transform: uppercase;
 }
@@ -79,7 +79,7 @@
   position: absolute;
   height: 100%;
   width: 50%;
-  background-image: url("../../img/fat-cat.png");
+  background-image: url("../img/fat-cat.png");
   background-size: 280px 100%;
   background-position: left center;
   background-repeat: no-repeat;
@@ -91,12 +91,65 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: url("../../img/slim-cat.png");
+  background-image: url("../img/slim-cat.png");
   background-size: 280px 100%;
   background-position: left center;
   background-repeat: no-repeat;
   background-color: $grey;
   z-index: 1;
+}
+
+.example__photo-toggle {
+  position: absolute;
+  z-index: 10;
+  padding: 0;
+  width: 4px;
+  height: 100%;
+  background-color: $special-grey-button;
+  border: none;
+  border-radius: 2px;
+  top: 0;
+  transform: translateX(-50%);
+  cursor: col-resize;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $white;
+    border: 2px solid $special-grey-button;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Vector'%3E%3Cpath d='M16 11L8 20L16 29V11Z' fill='%23666666'/%3E%3Cpath d='M32 20L24 11V29L32 20Z' fill='%23666666'/%3E%3C/g%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    background-color: $green;
+  }
+
+  &:hover::before {
+    border-color: $green;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Vector'%3E%3Cpath d='M16 11L8 20L16 29V11Z' fill='%2368b738'/%3E%3Cpath d='M32 20L24 11V29L32 20Z' fill='%2368b738'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  &:active {
+    background-color: $green;
+    opacity: 0.6;
+  }
+
+  &:active::before {
+    border-color: $green;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Vector'%3E%3Cpath d='M16 11L8 20L16 29V11Z' fill='%2368b738'/%3E%3Cpath d='M32 20L24 11V29L32 20Z' fill='%2368b738'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  &:focus::before {
+    outline: 1px solid $outline-color;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -163,7 +216,7 @@
   .example__photo-before {
     background-size: 560px 100%;
     background-color: transparent;
-    background-image: url("../../img/fat-cat.png"), linear-gradient(0deg, $grey 361px, $white 361px);
+    background-image: url("../img/fat-cat.png"), linear-gradient(0deg, $grey 361px, $white 361px);
   }
 
   .example__photo-after {
@@ -214,7 +267,7 @@
   }
 
   .example__photo-before {
-    background-image: url("../../img/fat-cat.png"), linear-gradient(0deg, $basic-grey 377px, $white 377px);
+    background-image: url("../img/fat-cat.png"), linear-gradient(0deg, $basic-grey 377px, $white 377px);
   }
 
   .example__item-name-text {
