@@ -6,6 +6,14 @@
     linear-gradient($promo-dark-grey 303px, transparent 303px);
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: 100% 303px, 320px 302px, 100% 303px;
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      linear-gradient(rgba(104, 183, 56, 0.85) 303px, transparent 303px),
+      url("/img/promo-cat@x2.jpg"),
+      linear-gradient($promo-dark-grey 303px, transparent 303px);
+  }
 }
 
 .promo__wrapper {
@@ -85,6 +93,14 @@
       linear-gradient(90deg, transparent 50%, $promo-dark-grey 50%);
     background-repeat: no-repeat;
     background-position: right top;
+    background-size: 100%, 720px 694px, 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        linear-gradient(90deg, transparent 50%, rgba(104, 183, 56, 0.85) 50%),
+        url("../img/promo-cat-desktop@x2.jpg"),
+        linear-gradient(90deg, transparent 50%, $promo-dark-grey 50%);
+    }
   }
 
   .promo__wrapper {

@@ -79,24 +79,26 @@
   position: absolute;
   height: 100%;
   width: 50%;
-  background-image: url("../img/fat-cat.png");
-  background-size: 280px 100%;
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-color: $grey;
+  overflow: hidden;
   z-index: 2;
 }
 
 .example__photo-after {
   position: absolute;
   height: 100%;
-  width: 100%;
-  background-image: url("../img/slim-cat.png");
-  background-size: 280px 100%;
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-color: $grey;
+  width: 50%;
+  right: 0;
+  overflow: hidden;
   z-index: 1;
+}
+
+.example__photo-image {
+  position: absolute;
+  top: 0;
+
+  &--after {
+    right: 0;
+  }
 }
 
 .example__photo-toggle {
@@ -213,15 +215,9 @@
     margin-right: auto;
   }
 
-  .example__photo-before {
-    background-size: 560px 100%;
-    background-color: transparent;
-    background-image: url("../img/fat-cat.png"), linear-gradient(0deg, $grey 361px, $white 361px);
-  }
-
-  .example__photo-after {
-    background-size: 560px 100%;
-    background-color: transparent;
+  .example__photo-image {
+    width: 560px;
+    height: 512px;
   }
 }
 
@@ -264,13 +260,5 @@
     grid-column: 2 / 3;
     padding-bottom: 10px;
     margin-top: 0;
-  }
-
-  .example__photo-before {
-    background-image: url("../img/fat-cat.png"), linear-gradient(0deg, $basic-grey 377px, $white 377px);
-  }
-
-  .example__item-name-text {
-    background-color: $basic-grey;
   }
 }

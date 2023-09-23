@@ -22,6 +22,10 @@
     margin-right: auto;
     margin-left: auto;
   }
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0 100%), url("../img/banner-bg-mobile@2x.jpg");
+  }
 }
 
 .banner__text {
@@ -50,6 +54,10 @@
       margin-right: 0;
       margin-left: 77px;
     }
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0 100%), url("../img/banner-bg-tablet@2x.jpg");
+    }
   }
 
   .banner__text {
@@ -69,10 +77,15 @@
     flex-direction: column;
     gap: 46px;
     padding: 56px 42px 43px 42px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0 100%), url("../img/banner-bg-mobile.jpg");
 
     &::before {
       margin-left: auto;
       margin-right: auto;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0 100%), url("../img/banner-bg-mobile@2x.jpg");
     }
   }
 

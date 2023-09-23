@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -37,7 +41,11 @@
         <div class="promo__wrapper container">
           <h2 class="promo__header title">Функциональное питание для котов</h2>
           <p class="promo__text">Занялся собой? Займись котом!</p>
-          <img class="promo__image" src="img/promo-image.png" alt="Банка корма Кэт энерджи с курицей" width="280" height="270">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/promo-image-desktop.png 1x, img/promo-image-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/promo-image-tablet.png 1x, img/promo-image-tablet@2x.png 2x">
+            <img class="promo__image" src="img/promo-image-mobile.png" srcset="img/promo-image-mobile@2x.png 2x" alt="Банка корма Кэт энерджи с курицей" width="280" height="270">
+          </picture>
           <a class="promo__link button" href="form.html">Подобрать программу</a>
         </div>
       </section>
@@ -85,10 +93,16 @@
           </div>
           <div class="example__photo">
             <div class="example__photo-before">
-              <span class="visually-hidden">Кот до похудения</span>
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/fat-cat-tablet.png 1x, img/fat-cat-tablet@2x.png 2x">
+                <img class="example__photo-image example__photo-image--before" src="img/fat-cat-mobile.png" srcset="img/fat-cat-mobile@2x.png 2x" alt="Кот до похудения" width="280" height="256">
+              </picture>
             </div>
             <div class="example__photo-after">
-              <span class="visually-hidden">Кот после похудения</span>
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/slim-cat-tablet.png 1x, img/slim-cat-tablet@2x.png 2x">
+                <img class="example__photo-image example__photo-image--after" src="img/slim-cat-mobile.png" srcset="img/slim-cat-mobile@2x.png 2x" alt="Кот после похудения" width="280" height="256">
+              </picture>
             </div>
             <button class="example__photo-toggle" type="button" style="left:50%">
               <span class="visually-hidden">Переключение фотографий</span>
