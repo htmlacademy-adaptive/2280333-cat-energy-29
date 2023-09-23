@@ -3,6 +3,7 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 .form__fieldset {
   border: none;
   padding: 0;
@@ -88,7 +89,6 @@
 }
 
 .form__fieldset-header-text {
-  display: inline-block;
   display: inline-block;
   background-color: $white;
   padding-right: 20px;
@@ -238,12 +238,14 @@
       padding-left: 110px;
       padding-right: 0;
     }
+
     &--radio {
       grid-column: 2 / 3;
       margin: 0;
       padding-left: 0;
       padding-right: 110px;
     }
+
     &--contacts {
       grid-column: 1 / 3;
       display: grid;
@@ -254,6 +256,7 @@
 
   .form__fieldset-header {
     grid-column: 1 / -1;
+
     &::before {
       margin-top: 22px;
       background-image: none;

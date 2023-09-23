@@ -63,7 +63,7 @@
   outline: 1px solid $outline-color;
 }
 
-.control__input:disabled ~ .control__checkbox{
+.control__input:disabled ~ .control__checkbo {
   border-color: $control-hover;
   opacity: 0.3;
 }

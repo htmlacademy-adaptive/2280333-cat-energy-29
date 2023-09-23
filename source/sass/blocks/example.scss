@@ -141,6 +141,7 @@
     background-color: $green;
     opacity: 0.6;
   }
+
   &:active::before {
     border-color: $green;
     background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Vector'%3E%3Cpath d='M16 11L8 20L16 29V11Z' fill='%2368b738'/%3E%3Cpath d='M32 20L24 11V29L32 20Z' fill='%2368b738'/%3E%3C/g%3E%3C/svg%3E");
