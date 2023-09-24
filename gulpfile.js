@@ -33,9 +33,9 @@ const optimizeHTML = () => {
   .pipe(gulp.dest('build'));
 }
 
-const copyHTML = () => {
+const copyHTML = (done) => {
   return gulp.src('source/*.html')
-  .pipe('build')
+  .pipe(gulp.dest('build'))
 }
 
 // SVG
@@ -113,7 +113,7 @@ export const build = gulp.series(
 );
 
 export default gulp.series(
-  clean, copy, copyImages,
-  gulp.parallel(optimizeHTML, svg, sprite, copyImages, styles, createWebp),
+  clean, copy, copyImages, copyHTML,
+  svg, sprite, styles, createWebp,
   server, watcher
 );
