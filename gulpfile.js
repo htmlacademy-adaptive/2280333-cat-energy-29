@@ -114,6 +114,6 @@ export const build = gulp.series(
 
 export default gulp.series(
   clean, copy, copyImages,
-  gulp.parallel(optimizeHTML, svg, sprite, copyImages, styles, createWebp),
+  gulp.parallel(copyHTML, svg, sprite, copyImages, styles, createWebp),
   server, watcher
 );
